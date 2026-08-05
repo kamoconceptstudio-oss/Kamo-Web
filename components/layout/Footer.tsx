@@ -18,7 +18,7 @@ export default function Footer() {
           reservados.
         </span>
 
-        <nav className="flex gap-md">
+        <nav aria-label="Navegación de pie de página" className="flex gap-md">
           {footerLinks.map((link) => (
             <a
               key={link.href}

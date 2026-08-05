@@ -1,0 +1,525 @@
+{
+  "Andres": {
+    "andres-render-bano-detalle": {
+      "category": "render",
+      "width": 1371,
+      "height": 1148,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 536
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 857
+        },
+        "desktop": {
+          "width": 1371,
+          "height": 1148
+        }
+      }
+    },
+    "andres-render-bano-general": {
+      "category": "render",
+      "width": 1600,
+      "height": 900,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 360
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 576
+        },
+        "desktop": {
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    "andres-render-bano-perspectiva": {
+      "category": "render",
+      "width": 1226,
+      "height": 1283,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 670
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1072
+        },
+        "desktop": {
+          "width": 1226,
+          "height": 1283
+        }
+      }
+    },
+    "andres-render-cocina-hero": {
+      "category": "render",
+      "width": 1600,
+      "height": 900,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 360
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 576
+        },
+        "desktop": {
+          "width": 1600,
+          "height": 900
+        }
+      }
+    }
+  },
+  "Julian": {
+    "julian-bano-general": {
+      "category": "fotografia",
+      "width": 1086,
+      "height": 1448,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 853
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1365
+        },
+        "desktop": {
+          "width": 1086,
+          "height": 1448
+        }
+      }
+    },
+    "julian-cocina-isla": {
+      "category": "fotografia",
+      "width": 1448,
+      "height": 1086,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 480
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 768
+        },
+        "desktop": {
+          "width": 1448,
+          "height": 1086
+        }
+      }
+    },
+    "julian-detalle-bano": {
+      "category": "fotografia",
+      "width": 1086,
+      "height": 1448,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 853
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1365
+        },
+        "desktop": {
+          "width": 1086,
+          "height": 1448
+        }
+      }
+    },
+    "julian-hero-cocina": {
+      "category": "fotografia",
+      "width": 1448,
+      "height": 1086,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 480
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 768
+        },
+        "desktop": {
+          "width": 1448,
+          "height": 1086
+        }
+      }
+    }
+  },
+  "Mikaely": {
+    "mikaely-obra-bano": {
+      "category": "obra",
+      "width": 941,
+      "height": 1672,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 1137
+        },
+        "tablet": {
+          "width": 941,
+          "height": 1672
+        },
+        "desktop": {
+          "width": 941,
+          "height": 1672
+        }
+      }
+    }
+  },
+  "Sjors": {
+    "sjor-render-bano-hero": {
+      "category": "render",
+      "width": 1535,
+      "height": 1024,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 427
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 683
+        },
+        "desktop": {
+          "width": 1535,
+          "height": 1024
+        }
+      }
+    },
+    "sjors-render-bano-general": {
+      "category": "render",
+      "width": 1600,
+      "height": 900,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 360
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 576
+        },
+        "desktop": {
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    "sjors-render-cocina-frontal": {
+      "category": "render",
+      "width": 1600,
+      "height": 900,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 360
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 576
+        },
+        "desktop": {
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    "sjors-render-cocina-hero": {
+      "category": "render",
+      "width": 1600,
+      "height": 900,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 360
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 576
+        },
+        "desktop": {
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    "sjors-render-cocina-lateral": {
+      "category": "render",
+      "width": 1536,
+      "height": 1024,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 427
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 683
+        },
+        "desktop": {
+          "width": 1536,
+          "height": 1024
+        }
+      }
+    }
+  },
+  "Thijs": {
+    "thijs-bano": {
+      "category": "fotografia",
+      "width": 1086,
+      "height": 1448,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 853
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1365
+        },
+        "desktop": {
+          "width": 1086,
+          "height": 1448
+        }
+      }
+    },
+    "thijs-bano-general": {
+      "category": "fotografia",
+      "width": 941,
+      "height": 1672,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 1137
+        },
+        "tablet": {
+          "width": 941,
+          "height": 1672
+        },
+        "desktop": {
+          "width": 941,
+          "height": 1672
+        }
+      }
+    },
+    "thijs-cocina": {
+      "category": "fotografia",
+      "width": 1402,
+      "height": 1122,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 512
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 819
+        },
+        "desktop": {
+          "width": 1402,
+          "height": 1122
+        }
+      }
+    },
+    "thijs-detalle-espejo": {
+      "category": "fotografia",
+      "width": 941,
+      "height": 1672,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 1137
+        },
+        "tablet": {
+          "width": 941,
+          "height": 1672
+        },
+        "desktop": {
+          "width": 941,
+          "height": 1672
+        }
+      }
+    },
+    "thijs-detalle-lavabo": {
+      "category": "fotografia",
+      "width": 1181,
+      "height": 1331,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 721
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1154
+        },
+        "desktop": {
+          "width": 1181,
+          "height": 1331
+        }
+      }
+    },
+    "thijs-hero-bano": {
+      "category": "fotografia",
+      "width": 1024,
+      "height": 1536,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 960
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1536
+        },
+        "desktop": {
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    },
+    "thijs-obra-bano-instalaciones": {
+      "category": "obra",
+      "width": 1448,
+      "height": 1086,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 480
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 768
+        },
+        "desktop": {
+          "width": 1448,
+          "height": 1086
+        }
+      }
+    },
+    "thijs-obra-bano-revestimientos": {
+      "category": "obra",
+      "width": 1448,
+      "height": 1086,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 480
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 768
+        },
+        "desktop": {
+          "width": 1448,
+          "height": 1086
+        }
+      }
+    },
+    "thijs-obra-cocina-mobiliario": {
+      "category": "obra",
+      "width": 1600,
+      "height": 900,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 360
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 576
+        },
+        "desktop": {
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    "thijs-obra-cocina-montaje": {
+      "category": "obra",
+      "width": 1024,
+      "height": 1536,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 960
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1536
+        },
+        "desktop": {
+          "width": 1024,
+          "height": 1536
+        }
+      }
+    },
+    "thijs-render-cocina-frontal": {
+      "category": "render",
+      "width": 1536,
+      "height": 1024,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 427
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 683
+        },
+        "desktop": {
+          "width": 1536,
+          "height": 1024
+        }
+      }
+    },
+    "thijs-render-cocina-hero": {
+      "category": "render",
+      "width": 1536,
+      "height": 1024,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 427
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 683
+        },
+        "desktop": {
+          "width": 1536,
+          "height": 1024
+        }
+      }
+    },
+    "thijs-render-cocina-lateral": {
+      "category": "render",
+      "width": 1536,
+      "height": 1024,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 427
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 683
+        },
+        "desktop": {
+          "width": 1536,
+          "height": 1024
+        }
+      }
+    }
+  }
+}

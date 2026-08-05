@@ -51,7 +51,10 @@ export default function Services() {
               key={service.number}
               className="flex items-start gap-md border-t border-neutral-200 pt-md md:gap-lg"
             >
-              <span className="text-numeral font-light leading-none tracking-tight text-neutral-200 md:text-display">
+              <span
+                aria-hidden="true"
+                className="text-numeral font-light leading-none tracking-tight text-neutral-200 md:text-display"
+              >
                 {service.number}
               </span>
               <div className="pt-xs">

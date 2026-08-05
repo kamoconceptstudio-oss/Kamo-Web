@@ -1,10 +1,15 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { fadeInUp, fadeInUpTransition } from "@/lib/motion";
 import Section from "../layout/Section";
+import ProjectCard from "../portfolio/ProjectCard";
+import { getFeaturedProjects } from "@/lib/portfolio";
 
 export default function FeaturedProject() {
+  const projects = getFeaturedProjects();
+
   return (
     <Section id="portfolio" className="border-b border-neutral-200">
       <motion.div
@@ -20,21 +25,17 @@ export default function FeaturedProject() {
         </h2>
 
         <div className="flex-1">
-          <div className="flex items-start gap-md border-t border-neutral-200 pt-md md:gap-lg">
-            <span className="text-numeral font-light leading-none tracking-tight text-neutral-200 md:text-display">
-              01
-            </span>
-            <div className="pt-xs">
-              <p className="mb-xs text-small uppercase tracking-[0.2em] text-neutral-500">
-                Proyecto destacado
-              </p>
-              <h3 className="mb-xs text-h3 font-normal">Próximamente</h3>
-              <p className="max-w-[36rem] text-body text-neutral-600">
-                Estamos documentando nuestro primer proyecto residencial
-                para mostrarlo aquí con el nivel de detalle que merece.
-              </p>
-            </div>
+          <div className="grid grid-cols-1 gap-xl border-t border-neutral-200 pt-lg sm:grid-cols-2">
+            {projects.map((project) => (
+              <ProjectCard key={project.slug} project={project} />
+            ))}
           </div>
+          <Link
+            href="/portfolio"
+            className="mt-lg inline-block text-small uppercase tracking-[0.15em] text-neutral-500 hover:text-neutral-900"
+          >
+            Ver todos los proyectos →
+          </Link>
         </div>
       </motion.div>
     </Section>

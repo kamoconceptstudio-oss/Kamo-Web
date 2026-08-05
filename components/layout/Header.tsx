@@ -1,3 +1,5 @@
+import Link from "next/link";
+import Image from "next/image";
 import Container from "./Container";
 import Button from "../ui/Button";
 
@@ -14,9 +16,22 @@ export default function Header() {
         width="wide"
         className="flex h-full items-center justify-between"
       >
-        <span className="text-h3 tracking-wide">Kamo Concept</span>
+        <Link href="/" aria-label="Kamo Concept">
+          <Image
+            src="/Assets/Brand/logo-horizontal.svg"
+            alt="Kamo Concept"
+            width={200}
+            height={129}
+            priority
+            unoptimized
+            className="h-8 w-auto"
+          />
+        </Link>
 
-        <nav className="hidden md:flex items-center gap-lg">
+        <nav
+          aria-label="Navegación principal"
+          className="hidden md:flex items-center gap-lg"
+        >
           {navLinks.map((link) => (
             <a
               key={link.href}
