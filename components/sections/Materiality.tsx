@@ -8,7 +8,7 @@ export default function Materiality() {
   return (
     <Section className="border-b border-neutral-200 text-right">
       <motion.p
-        className="ml-auto max-w-2xl text-h2 font-light italic leading-relaxed text-neutral-700 md:max-w-3xl"
+        className="ml-auto max-w-[42rem] text-h2 font-light italic leading-relaxed text-neutral-700 md:max-w-3xl"
         variants={fadeInUp}
         initial="hidden"
         whileInView="visible"

@@ -18,7 +18,7 @@ export default function Cta() {
         <h2 className="mb-md text-hero font-light leading-tight xl:text-display">
           Hablemos de tu proyecto
         </h2>
-        <p className="mx-auto mb-lg max-w-md text-body text-neutral-600">
+        <p className="mx-auto mb-lg max-w-[28rem] text-body text-neutral-600">
           Cuéntanos cómo quieres vivir tu espacio y te acompañamos desde la
           primera idea.
         </p>

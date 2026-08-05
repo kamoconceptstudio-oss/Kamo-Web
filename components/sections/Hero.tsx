@@ -1,18 +1,14 @@
 "use client";
 
-import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import Button from "../ui/Button";
 import heroDesktop from "@/public/Assets/Hero/hero-desktop.webp";
+import heroTablet from "@/public/Assets/Hero/hero-tablet.webp";
+import heroMobile from "@/public/Assets/Hero/hero-mobile.webp";
 import { fadeInUp, fadeInUpTransition } from "@/lib/motion";
 
-/**
- * Punto focal fijado a partir del análisis del asset Desktop real:
- * conserva el destello de luz natural de la puerta, la isla con el
- * jarrón y el primer punto de luz colgante; recorta el frigorífico.
- * Único valor hasta disponer de crops dedicados por breakpoint.
- */
-const HERO_IMAGE_OBJECT_POSITION = "30% 55%";
+const HERO_ALT =
+  "Cocina contemporánea de Kamo Concept: isla de piedra natural, mobiliario en madera oscura y luz natural entrando por un gran ventanal.";
 
 export default function Hero() {
   const shouldReduceMotion = useReducedMotion();
@@ -48,16 +44,28 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        <figure className="relative order-1 aspect-[4/3] w-full lg:order-2 lg:aspect-auto lg:h-full">
-          <Image
-            src={heroDesktop}
-            alt="Cocina contemporánea de Kamo Concept: isla de piedra natural, mobiliario en madera oscura y luz natural entrando por un gran ventanal."
-            fill
-            priority
-            placeholder="blur"
-            sizes="(min-width: 1536px) 60vw, (min-width: 1280px) 58vw, (min-width: 1024px) 55vw, 100vw"
-            style={{ objectFit: "cover", objectPosition: HERO_IMAGE_OBJECT_POSITION }}
-          />
+        <figure className="relative order-1 aspect-[4/5] w-full overflow-hidden md:aspect-[4/3] lg:order-2 lg:aspect-auto lg:h-full">
+          {/*
+            Arte dirigido nativo (picture + source): cada breakpoint carga
+            únicamente su propio crop, sin descargar los otros. El asset
+            Mobile es un retrato muy alto (853x1844); mostrarlo entero
+            dejaba la imagen ocupando casi el 100% del primer viewport sin
+            texto visible, así que se recorta a 4:5 con el foco en la
+            franja isla/jarrón/colgantes/ventana (se prioriza sobre techo y
+            suelo). El crop Tablet viene ya compuesto en 4:3 por el
+            estudio, centrado. El crop Desktop usa object-position 30/55
+            para priorizar la isla y recortar el frigorífico.
+          */}
+          <picture>
+            <source media="(min-width: 1024px)" srcSet={heroDesktop.src} />
+            <source media="(min-width: 768px)" srcSet={heroTablet.src} />
+            <img
+              src={heroMobile.src}
+              alt={HERO_ALT}
+              fetchPriority="high"
+              className="absolute inset-0 h-full w-full object-cover object-[50%_25%] md:object-center lg:object-[30%_55%]"
+            />
+          </picture>
         </figure>
       </div>
     </section>
