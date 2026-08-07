@@ -26,7 +26,8 @@ const services = [
   {
     number: "04",
     title: "Selección de materiales",
-    description: "Materialidad y luz como protagonistas de cada ambiente.",
+    description:
+      "Curaduría precisa, guiada por criterio técnico y sensibilidad estética.",
   },
 ];
 
@@ -53,7 +54,7 @@ export default function Services() {
             >
               <span
                 aria-hidden="true"
-                className="text-numeral font-light leading-none tracking-tight text-neutral-200 md:text-display"
+                className="text-h1 font-light leading-none tracking-tight text-neutral-200"
               >
                 {service.number}
               </span>

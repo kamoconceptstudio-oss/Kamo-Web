@@ -15,7 +15,7 @@ export default function Cta() {
         viewport={{ once: true, amount: 0.3 }}
         transition={fadeInUpTransition}
       >
-        <h2 className="mb-md text-hero font-light leading-tight xl:text-display">
+        <h2 className="mb-md text-h1 font-light leading-tight">
           Hablemos de tu proyecto
         </h2>
         <p className="mx-auto mb-lg max-w-[28rem] text-body text-neutral-600">

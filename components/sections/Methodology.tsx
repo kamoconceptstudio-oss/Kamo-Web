@@ -21,7 +21,7 @@ const steps = [
     number: "03",
     title: "Materialización",
     description:
-      "Seleccionamos materiales y acompañamos cada fase de ejecución.",
+      "Acompañamos la ejecución en obra para que el diseño se cumpla sin desviaciones.",
   },
   {
     number: "04",

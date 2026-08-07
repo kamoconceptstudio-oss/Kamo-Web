@@ -24,7 +24,7 @@ export default function ProjectPage({ project }: ProjectPageProps) {
             <p className="mb-md text-small uppercase tracking-[0.2em] text-neutral-500">
               {STATUS_LABEL[project.status]}
             </p>
-            <h1 className="mb-lg text-hero font-light leading-tight xl:text-display">
+            <h1 className="mb-lg text-h1 font-light leading-tight">
               {project.title}
             </h1>
             <p className="max-w-[32rem] text-body text-neutral-600">

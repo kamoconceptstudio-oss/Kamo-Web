@@ -3,8 +3,11 @@
 import { motion, useReducedMotion } from "framer-motion";
 import Button from "../ui/Button";
 import heroDesktop from "@/public/Assets/Hero/hero-desktop.webp";
+import heroDesktopAvif from "@/public/Assets/Hero/hero-desktop.avif";
 import heroTablet from "@/public/Assets/Hero/hero-tablet.webp";
+import heroTabletAvif from "@/public/Assets/Hero/hero-tablet.avif";
 import heroMobile from "@/public/Assets/Hero/hero-mobile.webp";
+import heroMobileAvif from "@/public/Assets/Hero/hero-mobile.avif";
 import { fadeInUp, fadeInUpTransition } from "@/lib/motion";
 
 const HERO_ALT =
@@ -47,18 +50,38 @@ export default function Hero() {
         <figure className="relative order-1 aspect-[4/5] w-full overflow-hidden md:aspect-[4/3] lg:order-2 lg:aspect-auto lg:h-full">
           {/*
             Arte dirigido nativo (picture + source): cada breakpoint carga
-            únicamente su propio crop, sin descargar los otros. El asset
-            Mobile es un retrato muy alto (853x1844); mostrarlo entero
-            dejaba la imagen ocupando casi el 100% del primer viewport sin
-            texto visible, así que se recorta a 4:5 con el foco en la
-            franja isla/jarrón/colgantes/ventana (se prioriza sobre techo y
-            suelo). El crop Tablet viene ya compuesto en 4:3 por el
-            estudio, centrado. El crop Desktop usa object-position 30/55
-            para priorizar la isla y recortar el frigorífico.
+            únicamente su propio crop, en AVIF con fallback a WebP, sin
+            descargar los otros. Los tres crops (desktop 1535x1024, tablet
+            1365x1024 4:3, mobile 819x1024 4:5) se derivan de la misma
+            fuente editorial, centrados en la franja isla/jarrón/colgantes/
+            ventana. El crop Mobile ya viene recortado a 4:5, por lo que el
+            object-position solo actúa como red de seguridad. El crop
+            Desktop usa object-position 30/55 para priorizar la isla y
+            recortar el frigorífico cuando el contenedor es más estrecho
+            que la imagen.
           */}
           <picture>
-            <source media="(min-width: 1024px)" srcSet={heroDesktop.src} />
-            <source media="(min-width: 768px)" srcSet={heroTablet.src} />
+            <source
+              media="(min-width: 1024px)"
+              type="image/avif"
+              srcSet={heroDesktopAvif.src}
+            />
+            <source
+              media="(min-width: 1024px)"
+              type="image/webp"
+              srcSet={heroDesktop.src}
+            />
+            <source
+              media="(min-width: 768px)"
+              type="image/avif"
+              srcSet={heroTabletAvif.src}
+            />
+            <source
+              media="(min-width: 768px)"
+              type="image/webp"
+              srcSet={heroTablet.src}
+            />
+            <source type="image/avif" srcSet={heroMobileAvif.src} />
             <img
               src={heroMobile.src}
               alt={HERO_ALT}

@@ -11,9 +11,9 @@ export const projects: PortfolioProjectInput[] = [
     title: "Baño y cocina en clave contemporánea",
     status: "completado",
     summary:
-      "Reforma integral de baño y cocina, documentada desde la fase de obra hasta el resultado final.",
+      "Proyecto de interiorismo integral de baño y cocina en una vivienda de obra nueva, documentado desde la ejecución hasta el resultado final.",
     description:
-      "Proyecto de reforma que abarca baño y cocina, con acabados en tonos neutros, grifería en tono cobre y mobiliario a medida. Se documenta el proceso completo: ejecución en obra, propuesta de cocina y fotografía final del baño.",
+      "Intervención de interiorismo en baño y cocina dentro de una vivienda de nueva construcción, resuelta con tonos neutros, grifería en cobre y mobiliario a medida. El seguimiento fotográfico recoge la ejecución, la propuesta de cocina y el resultado final del baño.",
     featured: true,
     coverImageId: "thijs-hero-bano",
     images: [
@@ -77,9 +77,9 @@ export const projects: PortfolioProjectInput[] = [
     title: "Cocina en mármol y madera clara",
     status: "completado",
     summary:
-      "Reforma de cocina con isla en mármol y mobiliario en madera clara, luz natural y acabados integrados.",
+      "Proyecto de interiorismo para una cocina en una vivienda de obra nueva, con isla en mármol y mobiliario en madera clara bajo luz natural.",
     description:
-      "Cocina reformada con isla central en mármol blanco veteado, frentes en madera clara y electrodomésticos integrados en negro. El baño asociado combina mueble de lavabo en madera oscura con azulejo en relieve.",
+      "Interiorismo de cocina en un proyecto de obra nueva, resuelto con isla central en mármol blanco veteado, frentes en madera clara y electrodomésticos integrados en negro. El baño asociado combina mueble de lavabo en madera oscura con azulejo en relieve.",
     featured: true,
     coverImageId: "julian-hero-cocina",
     images: [
@@ -104,30 +104,26 @@ export const projects: PortfolioProjectInput[] = [
   {
     slug: "cocina-bano-tonos-calidos",
     folder: "Andres",
-    title: "Cocina y baño en tonos cálidos",
+    title: "Baño en clave contemporánea",
     status: "concepto",
     summary:
-      "Propuesta de cocina y baño con materiales cálidos: madera, piedra natural y acabados en terracota.",
+      "Un baño donde la textura cerámica en espiga y la luz rasante definen por completo la atmósfera del espacio.",
     description:
-      "Propuesta de diseño para cocina y baño con isla en madera oscura, encimera de piedra y detalles en terracota. El baño se presenta con dos alternativas de acabado en grifería, dorada y negra, sobre la misma distribución.",
+      "Concepto de baño concebido como un ejercicio de textura y luz: el revestimiento cerámico en espiga, realzado por una iluminación rasante, define el carácter del espacio. El mueble de lavabo en madera y una paleta cálida completan una atmósfera serena y atemporal.",
     featured: false,
-    coverImageId: "andres-render-bano-detalle",
+    coverImageId: "andres-render-bano-perspectiva",
     images: [
       {
-        id: "andres-render-cocina-hero",
-        alt: "Cocina en tonos cálidos con isla en madera oscura, encimera negra y hueco decorativo en terracota.",
-      },
-      {
-        id: "andres-render-bano-detalle",
-        alt: "Baño con espejo redondo de marco dorado, mueble de lavabo en madera y grifería dorada.",
+        id: "andres-render-bano-perspectiva",
+        alt: "Vista general de baño con revestimiento cerámico en espiga, iluminación rasante, ducha, inodoro y mueble de lavabo en madera.",
       },
       {
         id: "andres-render-bano-general",
-        alt: "Baño con espejo redondo de marco negro, mueble de lavabo en madera y grifería negra, ducha con mampara de cristal.",
+        alt: "Baño con revestimiento cerámico en espiga, espejo redondo, mueble de lavabo en madera y ducha con mampara de cristal.",
       },
       {
-        id: "andres-render-bano-perspectiva",
-        alt: "Vista general de baño con ducha, inodoro, mueble de lavabo en madera y nicho alicatado en verde.",
+        id: "andres-render-bano-detalle",
+        alt: "Detalle de mueble de lavabo en madera con espejo redondo, sobre pared con revestimiento cerámico en espiga.",
       },
     ],
   },

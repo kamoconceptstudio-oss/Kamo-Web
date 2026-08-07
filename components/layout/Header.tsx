@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import Container from "./Container";
-import Button from "../ui/Button";
 
 const navLinks = [
+  { href: "/portfolio", label: "Portfolio" },
   { href: "#servicios", label: "Servicios" },
   { href: "#proceso", label: "Proceso" },
   { href: "#contacto", label: "Contacto" },
@@ -24,7 +24,7 @@ export default function Header() {
             height={129}
             priority
             unoptimized
-            className="h-8 w-auto"
+            className="h-9 w-auto"
           />
         </Link>
 
@@ -33,19 +33,15 @@ export default function Header() {
           className="hidden md:flex items-center gap-lg"
         >
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="text-body text-neutral-700 hover:text-neutral-900"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
-
-        <Button variant="primary" size="sm" className="text-small">
-          Reservar consulta
-        </Button>
       </Container>
     </header>
   );

@@ -10,7 +10,7 @@ export default function PortfolioPage() {
       <p className="mb-md text-small uppercase tracking-[0.2em] text-neutral-500">
         Kamo Concept
       </p>
-      <h1 className="mb-2xl max-w-2xl text-hero font-light leading-tight xl:text-display">
+      <h1 className="mb-2xl max-w-2xl text-h1 font-light leading-tight">
         Portfolio
       </h1>
       <div className="grid grid-cols-1 gap-xl md:grid-cols-2 lg:grid-cols-3">
