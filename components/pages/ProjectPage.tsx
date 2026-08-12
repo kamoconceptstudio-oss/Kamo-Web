@@ -33,7 +33,7 @@ export default function ProjectPage({ project }: ProjectPageProps) {
           </div>
           <div className="relative mt-xl aspect-[4/3] w-full overflow-hidden bg-surface-warm md:mt-0 md:w-1/2">
             <ResponsivePicture
-              folder={project.folder}
+              slug={project.slug}
               image={project.coverImage}
               sizes="(min-width: 768px) 50vw, 100vw"
               priority
@@ -44,7 +44,7 @@ export default function ProjectPage({ project }: ProjectPageProps) {
       </Section>
 
       <Section width="wide">
-        <ProjectGallery folder={project.folder} images={project.images} />
+        <ProjectGallery slug={project.slug} images={project.images} />
       </Section>
     </>
   );

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import ProjectPage from "@/components/pages/ProjectPage";
 import { getAllSlugs, getProjectBySlug } from "@/lib/portfolio";
 import { getAssetPath } from "@/lib/portfolio/getAssetPath";
+import { SITE_NAME } from "@/lib/site";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -17,7 +18,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const project = getProjectBySlug(slug);
   if (!project) return {};
 
-  const coverUrl = getAssetPath(project.folder, project.coverImage.id, "desktop", "webp");
+  const coverUrl = getAssetPath(project.slug, project.coverImage.id, "desktop", "webp");
 
   return {
     title: project.title,
@@ -26,6 +27,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       canonical: `/portfolio/${project.slug}`,
     },
     openGraph: {
+      type: "website",
+      locale: "es_ES",
+      siteName: SITE_NAME,
       title: project.title,
       description: project.summary,
       url: `/portfolio/${project.slug}`,

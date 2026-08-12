@@ -1,6 +1,6 @@
 {
-  "Andres": {
-    "andres-render-bano-detalle": {
+  "bano-clave-contemporanea": {
+    "bano-clave-contemporanea-render-bano-detalle": {
       "category": "render",
       "width": 1371,
       "height": 1148,
@@ -19,7 +19,7 @@
         }
       }
     },
-    "andres-render-bano-general": {
+    "bano-clave-contemporanea-render-bano-general": {
       "category": "render",
       "width": 1600,
       "height": 900,
@@ -38,7 +38,7 @@
         }
       }
     },
-    "andres-render-bano-perspectiva": {
+    "bano-clave-contemporanea-render-bano-perspectiva": {
       "category": "render",
       "width": 1226,
       "height": 1283,
@@ -57,7 +57,7 @@
         }
       }
     },
-    "andres-render-cocina-hero": {
+    "bano-clave-contemporanea-render-cocina-hero": {
       "category": "render",
       "width": 1600,
       "height": 900,
@@ -77,8 +77,8 @@
       }
     }
   },
-  "Julian": {
-    "julian-bano-general": {
+  "bano-cocina-contemporaneos": {
+    "bano-cocina-contemporaneos-bano": {
       "category": "fotografia",
       "width": 1086,
       "height": 1448,
@@ -97,203 +97,7 @@
         }
       }
     },
-    "julian-cocina-isla": {
-      "category": "fotografia",
-      "width": 1448,
-      "height": 1086,
-      "tiers": {
-        "mobile": {
-          "width": 640,
-          "height": 480
-        },
-        "tablet": {
-          "width": 1024,
-          "height": 768
-        },
-        "desktop": {
-          "width": 1448,
-          "height": 1086
-        }
-      }
-    },
-    "julian-detalle-bano": {
-      "category": "fotografia",
-      "width": 1086,
-      "height": 1448,
-      "tiers": {
-        "mobile": {
-          "width": 640,
-          "height": 853
-        },
-        "tablet": {
-          "width": 1024,
-          "height": 1365
-        },
-        "desktop": {
-          "width": 1086,
-          "height": 1448
-        }
-      }
-    },
-    "julian-hero-cocina": {
-      "category": "fotografia",
-      "width": 1448,
-      "height": 1086,
-      "tiers": {
-        "mobile": {
-          "width": 640,
-          "height": 480
-        },
-        "tablet": {
-          "width": 1024,
-          "height": 768
-        },
-        "desktop": {
-          "width": 1448,
-          "height": 1086
-        }
-      }
-    }
-  },
-  "Mikaely": {
-    "mikaely-obra-bano": {
-      "category": "obra",
-      "width": 941,
-      "height": 1672,
-      "tiers": {
-        "mobile": {
-          "width": 640,
-          "height": 1137
-        },
-        "tablet": {
-          "width": 941,
-          "height": 1672
-        },
-        "desktop": {
-          "width": 941,
-          "height": 1672
-        }
-      }
-    }
-  },
-  "Sjors": {
-    "sjor-render-bano-hero": {
-      "category": "render",
-      "width": 1535,
-      "height": 1024,
-      "tiers": {
-        "mobile": {
-          "width": 640,
-          "height": 427
-        },
-        "tablet": {
-          "width": 1024,
-          "height": 683
-        },
-        "desktop": {
-          "width": 1535,
-          "height": 1024
-        }
-      }
-    },
-    "sjors-render-bano-general": {
-      "category": "render",
-      "width": 1600,
-      "height": 900,
-      "tiers": {
-        "mobile": {
-          "width": 640,
-          "height": 360
-        },
-        "tablet": {
-          "width": 1024,
-          "height": 576
-        },
-        "desktop": {
-          "width": 1600,
-          "height": 900
-        }
-      }
-    },
-    "sjors-render-cocina-frontal": {
-      "category": "render",
-      "width": 1600,
-      "height": 900,
-      "tiers": {
-        "mobile": {
-          "width": 640,
-          "height": 360
-        },
-        "tablet": {
-          "width": 1024,
-          "height": 576
-        },
-        "desktop": {
-          "width": 1600,
-          "height": 900
-        }
-      }
-    },
-    "sjors-render-cocina-hero": {
-      "category": "render",
-      "width": 1600,
-      "height": 900,
-      "tiers": {
-        "mobile": {
-          "width": 640,
-          "height": 360
-        },
-        "tablet": {
-          "width": 1024,
-          "height": 576
-        },
-        "desktop": {
-          "width": 1600,
-          "height": 900
-        }
-      }
-    },
-    "sjors-render-cocina-lateral": {
-      "category": "render",
-      "width": 1536,
-      "height": 1024,
-      "tiers": {
-        "mobile": {
-          "width": 640,
-          "height": 427
-        },
-        "tablet": {
-          "width": 1024,
-          "height": 683
-        },
-        "desktop": {
-          "width": 1536,
-          "height": 1024
-        }
-      }
-    }
-  },
-  "Thijs": {
-    "thijs-bano": {
-      "category": "fotografia",
-      "width": 1086,
-      "height": 1448,
-      "tiers": {
-        "mobile": {
-          "width": 640,
-          "height": 853
-        },
-        "tablet": {
-          "width": 1024,
-          "height": 1365
-        },
-        "desktop": {
-          "width": 1086,
-          "height": 1448
-        }
-      }
-    },
-    "thijs-bano-general": {
+    "bano-cocina-contemporaneos-bano-general": {
       "category": "fotografia",
       "width": 941,
       "height": 1672,
@@ -312,7 +116,7 @@
         }
       }
     },
-    "thijs-cocina": {
+    "bano-cocina-contemporaneos-cocina": {
       "category": "fotografia",
       "width": 1402,
       "height": 1122,
@@ -331,7 +135,7 @@
         }
       }
     },
-    "thijs-detalle-espejo": {
+    "bano-cocina-contemporaneos-detalle-espejo": {
       "category": "fotografia",
       "width": 941,
       "height": 1672,
@@ -350,7 +154,7 @@
         }
       }
     },
-    "thijs-detalle-lavabo": {
+    "bano-cocina-contemporaneos-detalle-lavabo": {
       "category": "fotografia",
       "width": 1181,
       "height": 1331,
@@ -369,7 +173,7 @@
         }
       }
     },
-    "thijs-hero-bano": {
+    "bano-cocina-contemporaneos-hero-bano": {
       "category": "fotografia",
       "width": 1024,
       "height": 1536,
@@ -388,7 +192,7 @@
         }
       }
     },
-    "thijs-obra-bano-instalaciones": {
+    "bano-cocina-contemporaneos-obra-bano-instalaciones": {
       "category": "obra",
       "width": 1448,
       "height": 1086,
@@ -407,7 +211,7 @@
         }
       }
     },
-    "thijs-obra-bano-revestimientos": {
+    "bano-cocina-contemporaneos-obra-bano-revestimientos": {
       "category": "obra",
       "width": 1448,
       "height": 1086,
@@ -426,7 +230,7 @@
         }
       }
     },
-    "thijs-obra-cocina-mobiliario": {
+    "bano-cocina-contemporaneos-obra-cocina-mobiliario": {
       "category": "obra",
       "width": 1600,
       "height": 900,
@@ -445,7 +249,7 @@
         }
       }
     },
-    "thijs-obra-cocina-montaje": {
+    "bano-cocina-contemporaneos-obra-cocina-montaje": {
       "category": "obra",
       "width": 1024,
       "height": 1536,
@@ -464,7 +268,7 @@
         }
       }
     },
-    "thijs-render-cocina-frontal": {
+    "bano-cocina-contemporaneos-render-cocina-frontal": {
       "category": "render",
       "width": 1536,
       "height": 1024,
@@ -483,7 +287,7 @@
         }
       }
     },
-    "thijs-render-cocina-hero": {
+    "bano-cocina-contemporaneos-render-cocina-hero": {
       "category": "render",
       "width": 1536,
       "height": 1024,
@@ -502,7 +306,203 @@
         }
       }
     },
-    "thijs-render-cocina-lateral": {
+    "bano-cocina-contemporaneos-render-cocina-lateral": {
+      "category": "render",
+      "width": 1536,
+      "height": 1024,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 427
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 683
+        },
+        "desktop": {
+          "width": 1536,
+          "height": 1024
+        }
+      }
+    }
+  },
+  "bano-en-ejecucion": {
+    "bano-en-ejecucion-obra-bano": {
+      "category": "obra",
+      "width": 941,
+      "height": 1672,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 1137
+        },
+        "tablet": {
+          "width": 941,
+          "height": 1672
+        },
+        "desktop": {
+          "width": 941,
+          "height": 1672
+        }
+      }
+    }
+  },
+  "cocina-marmol-madera-clara": {
+    "cocina-marmol-madera-clara-bano-general": {
+      "category": "fotografia",
+      "width": 1086,
+      "height": 1448,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 853
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1365
+        },
+        "desktop": {
+          "width": 1086,
+          "height": 1448
+        }
+      }
+    },
+    "cocina-marmol-madera-clara-cocina-isla": {
+      "category": "fotografia",
+      "width": 1448,
+      "height": 1086,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 480
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 768
+        },
+        "desktop": {
+          "width": 1448,
+          "height": 1086
+        }
+      }
+    },
+    "cocina-marmol-madera-clara-detalle-bano": {
+      "category": "fotografia",
+      "width": 1086,
+      "height": 1448,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 853
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1365
+        },
+        "desktop": {
+          "width": 1086,
+          "height": 1448
+        }
+      }
+    },
+    "cocina-marmol-madera-clara-hero-cocina": {
+      "category": "fotografia",
+      "width": 1448,
+      "height": 1086,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 480
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 768
+        },
+        "desktop": {
+          "width": 1448,
+          "height": 1086
+        }
+      }
+    }
+  },
+  "cocina-tonos-terracota": {
+    "cocina-tonos-terracota-render-bano-general": {
+      "category": "render",
+      "width": 1600,
+      "height": 900,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 360
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 576
+        },
+        "desktop": {
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    "cocina-tonos-terracota-render-bano-hero": {
+      "category": "render",
+      "width": 1535,
+      "height": 1024,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 427
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 683
+        },
+        "desktop": {
+          "width": 1535,
+          "height": 1024
+        }
+      }
+    },
+    "cocina-tonos-terracota-render-cocina-frontal": {
+      "category": "render",
+      "width": 1600,
+      "height": 900,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 360
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 576
+        },
+        "desktop": {
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    "cocina-tonos-terracota-render-cocina-hero": {
+      "category": "render",
+      "width": 1600,
+      "height": 900,
+      "tiers": {
+        "mobile": {
+          "width": 640,
+          "height": 360
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 576
+        },
+        "desktop": {
+          "width": 1600,
+          "height": 900
+        }
+      }
+    },
+    "cocina-tonos-terracota-render-cocina-lateral": {
       "category": "render",
       "width": 1536,
       "height": 1024,

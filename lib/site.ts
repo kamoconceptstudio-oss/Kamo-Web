@@ -4,5 +4,6 @@
 // archivos cuando se confirme.
 export const SITE_URL = "https://www.kamoconcept.com";
 export const SITE_NAME = "Kamo Concept";
+export const SITE_TITLE_DEFAULT = "Kamo Concept — Interiorismo residencial en Barcelona";
 export const SITE_DESCRIPTION =
   "Kamo Concept — Estudio de interiorismo residencial contemporáneo en Barcelona.";

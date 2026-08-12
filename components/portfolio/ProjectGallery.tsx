@@ -10,11 +10,11 @@ const CATEGORY_LABEL: Record<PortfolioCategory, string> = {
 const CATEGORY_ORDER: PortfolioCategory[] = ["fotografia", "render", "obra"];
 
 interface ProjectGalleryProps {
-  folder: string;
+  slug: string;
   images: PortfolioImage[];
 }
 
-export default function ProjectGallery({ folder, images }: ProjectGalleryProps) {
+export default function ProjectGallery({ slug, images }: ProjectGalleryProps) {
   const categories = CATEGORY_ORDER.filter((category) =>
     images.some((img) => img.category === category)
   );
@@ -35,7 +35,7 @@ export default function ProjectGallery({ folder, images }: ProjectGalleryProps) 
               .map((image) => (
                 <div key={image.id} className="overflow-hidden bg-surface-warm">
                   <ResponsivePicture
-                    folder={folder}
+                    slug={slug}
                     image={image}
                     sizes="(min-width: 768px) 50vw, 100vw"
                     className="h-full w-full object-cover"

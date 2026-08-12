@@ -12,15 +12,14 @@ interface ManifestEntry {
 const manifest = manifestJson as unknown as Record<string, Record<string, ManifestEntry>>;
 
 function resolveImage(
-  folder: string,
   projectSlug: string,
   input: { id: string; alt: string }
 ): PortfolioImage {
-  const entry = manifest[folder]?.[input.id];
+  const entry = manifest[projectSlug]?.[input.id];
   if (!entry) {
     throw new Error(
       `[portfolio] La imagen "${input.id}" referenciada en el proyecto "${projectSlug}" ` +
-        `no existe en manifest.generated.json para la carpeta "${folder}". ` +
+        `no existe en manifest.generated.json para el slug "${projectSlug}". ` +
         `¿Falta ejecutar "npm run portfolio:manifest"?`
     );
   }
@@ -28,9 +27,7 @@ function resolveImage(
 }
 
 function resolveProject(input: (typeof projectInputs)[number]): PortfolioProject {
-  const images = input.images.map((img) =>
-    resolveImage(input.folder, input.slug, img)
-  );
+  const images = input.images.map((img) => resolveImage(input.slug, img));
   const coverImage = images.find((img) => img.id === input.coverImageId);
   if (!coverImage) {
     throw new Error(

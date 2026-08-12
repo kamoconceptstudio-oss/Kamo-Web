@@ -1,11 +1,18 @@
-// Escanea public/Assets/Portafolio/{folder}/03_WEB y genera un manifest
+// Escanea public/Assets/Portafolio/{slug}/03_WEB y genera un manifest
 // tecnico (dimensiones + tiers disponibles) para lib/portfolio.
 // Se regenera cada vez que cambian los assets: npm run portfolio:manifest
+//
+// La carpeta publica esta nombrada por "slug" (identificador publico, ver
+// lib/portfolio/projects.ts). Los originales (02_Select) viven fuera de
+// public/ en assets-source/Portafolio/{codename}/02_Select, nombrados por el
+// codename interno del cliente -- ese codename nunca debe volver a public/.
 import { readdirSync, statSync, writeFileSync } from "fs";
 import path from "path";
 import sharp from "sharp";
+import { projects } from "../lib/portfolio/projects.ts";
 
-const ROOT = path.resolve("public/Assets/Portafolio");
+const WEB_ROOT = path.resolve("public/Assets/Portafolio");
+const SOURCE_ROOT = path.resolve("assets-source/Portafolio");
 const OUT = path.resolve("lib/portfolio/manifest.generated.json");
 const TIERS = ["mobile", "tablet", "desktop"];
 
@@ -15,19 +22,38 @@ const CATEGORY_BY_FOLDER = {
   "03_obra": "obra",
 };
 
+const SOURCE_FOLDER_BY_SLUG = Object.fromEntries(
+  projects.map((p) => [p.slug, p.folder])
+);
+
 function isDir(p) {
   return statSync(p).isDirectory();
 }
 
-function findCategory(selectDir, base) {
+// Los nombres en 02_Select siguen el codename original ("thijs-hero-bano"),
+// mientras que "base" ya viene con el prefijo del slug publico
+// ("bano-cocina-contemporaneos-hero-bano"). Comparamos por el sufijo comun
+// (todo lo que va detras del prefijo del proyecto) en vez de por nombre
+// exacto, para no tener que tocar los originales.
+function findCategory(slug, base) {
+  const sourceFolder = SOURCE_FOLDER_BY_SLUG[slug];
+  if (!sourceFolder) return null;
+  const selectDir = path.join(SOURCE_ROOT, sourceFolder, "02_Select");
+  try {
+    if (!isDir(selectDir)) return null;
+  } catch {
+    return null;
+  }
+  const suffix = base.startsWith(`${slug}-`) ? base.slice(slug.length + 1) : base;
   for (const entry of readdirSync(selectDir, { withFileTypes: true })) {
     if (!entry.isDirectory()) continue;
     const category = CATEGORY_BY_FOLDER[entry.name.toLowerCase()];
     if (!category) continue;
     const dir = path.join(selectDir, entry.name);
-    const hit = readdirSync(dir).some(
-      (f) => path.basename(f, path.extname(f)) === base
-    );
+    const hit = readdirSync(dir).some((f) => {
+      const name = path.basename(f, path.extname(f));
+      return name === suffix || name.endsWith(`-${suffix}`);
+    });
     if (hit) return category;
   }
   return null;
@@ -35,12 +61,11 @@ function findCategory(selectDir, base) {
 
 const manifest = {};
 
-for (const folder of readdirSync(ROOT)) {
-  const projectDir = path.join(ROOT, folder);
+for (const slug of readdirSync(WEB_ROOT)) {
+  const projectDir = path.join(WEB_ROOT, slug);
   if (!isDir(projectDir)) continue;
 
   const webDir = path.join(projectDir, "03_WEB");
-  const selectDir = path.join(projectDir, "02_Select");
   try {
     if (!isDir(webDir)) continue;
   } catch {
@@ -73,7 +98,7 @@ for (const folder of readdirSync(ROOT)) {
       }
       const desktop =
         resolvedTiers.desktop ?? resolvedTiers.tablet ?? resolvedTiers.mobile;
-      const category = findCategory(selectDir, base);
+      const category = findCategory(slug, base);
       return [
         base,
         {
@@ -86,7 +111,7 @@ for (const folder of readdirSync(ROOT)) {
     })
   );
 
-  manifest[folder] = Object.fromEntries(
+  manifest[slug] = Object.fromEntries(
     resolvedEntries.sort(([a], [b]) => a.localeCompare(b))
   );
 }
