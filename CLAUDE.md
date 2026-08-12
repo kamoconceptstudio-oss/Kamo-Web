@@ -2,9 +2,11 @@
 
 # Kamo Concept — Contexto del proyecto
 
-Kamo Concept es un estudio de interiorismo residencial contemporáneo en
-Barcelona. Esta web es su principal herramienta comercial y de
-posicionamiento — no una landing genérica ni una plantilla.
+Kamo Concept es un estudio de interiorismo residencial contemporáneo con
+base en Barcelona, que desarrolla proyectos tanto presenciales como a
+distancia para clientes de cualquier lugar. Esta web es su principal
+herramienta comercial y de posicionamiento — no una landing genérica ni
+una plantilla.
 
 **Identidad**: elegancia, materialidad, luz, calma, precisión, calidad.
 Contemporáneo con carácter, base visual neutra; nunca "tech" ni ostentoso.

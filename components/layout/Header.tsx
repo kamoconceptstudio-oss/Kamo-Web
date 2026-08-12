@@ -1,13 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import Container from "./Container";
-
-const navLinks = [
-  { href: "/portfolio", label: "Portfolio" },
-  { href: "#servicios", label: "Servicios" },
-  { href: "#proceso", label: "Proceso" },
-  { href: "#contacto", label: "Contacto" },
-];
+import MobileNav from "./MobileNav";
+import { navLinks } from "@/lib/navLinks";
 
 export default function Header() {
   return (
@@ -42,6 +37,8 @@ export default function Header() {
             </Link>
           ))}
         </nav>
+
+        <MobileNav />
       </Container>
     </header>
   );

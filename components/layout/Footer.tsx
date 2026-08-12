@@ -1,9 +1,10 @@
+import Link from "next/link";
 import Container from "./Container";
 
 const footerLinks = [
-  { href: "#servicios", label: "Servicios" },
-  { href: "#proceso", label: "Proceso" },
-  { href: "#contacto", label: "Contacto" },
+  { href: "/#servicios", label: "Servicios" },
+  { href: "/#proceso", label: "Proceso" },
+  { href: "/#contacto", label: "Contacto" },
 ];
 
 export default function Footer() {
@@ -20,13 +21,13 @@ export default function Footer() {
 
         <nav aria-label="Navegación de pie de página" className="flex gap-md">
           {footerLinks.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="hover:text-neutral-900"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
       </Container>

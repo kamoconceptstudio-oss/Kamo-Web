@@ -8,10 +8,6 @@ const jsonLd = {
   description: SITE_DESCRIPTION,
   url: SITE_URL,
   image: `${SITE_URL}/Assets/Brand/logo-horizontal.svg`,
-  areaServed: {
-    "@type": "City",
-    name: "Barcelona",
-  },
 };
 
 export default function Home() {

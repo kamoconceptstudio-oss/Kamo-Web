@@ -30,7 +30,7 @@ export default function Hero() {
           className="order-2 flex flex-col justify-center px-sm py-xl md:px-lg lg:order-1 lg:justify-center lg:pt-[1rem] lg:pb-[9rem]"
         >
           <p className="mb-lg text-small uppercase tracking-[0.2em] text-neutral-500">
-            Estudio de interiorismo residencial · Barcelona
+            Estudio de interiorismo residencial contemporáneo
           </p>
           <h1
             id="hero-heading"
@@ -43,7 +43,9 @@ export default function Hero() {
             último detalle.
           </p>
           <div className="mt-md">
-            <Button variant="primary">Reservar consulta</Button>
+            <Button variant="primary" href="/#contacto">
+              Reservar consulta
+            </Button>
           </div>
         </motion.div>
 
