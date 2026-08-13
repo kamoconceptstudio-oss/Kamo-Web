@@ -6,7 +6,7 @@ import { navLinks } from "@/lib/navLinks";
 
 export default function Header() {
   return (
-    <header className="h-header border-b border-neutral-200">
+    <header className="fixed inset-x-0 top-0 z-50 h-header border-b border-neutral-100 bg-white md:static md:z-auto md:border-neutral-200 md:bg-transparent">
       <Container
         width="wide"
         className="flex h-full items-center justify-between"

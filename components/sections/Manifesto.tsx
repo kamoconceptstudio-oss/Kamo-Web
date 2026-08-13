@@ -6,11 +6,11 @@ import Section from "../layout/Section";
 
 export default function Manifesto() {
   return (
-    <Section className="border-b border-neutral-200">
+    <Section className="border-b border-neutral-200 !py-lg md:!py-xl">
       <div className="md:flex md:gap-2xl">
         <div aria-hidden="true" className="md:w-40 md:flex-shrink-0" />
         <motion.p
-          className="max-w-3xl text-h2 font-light leading-relaxed tracking-tight text-neutral-800"
+          className="max-w-3xl text-h3 font-light leading-relaxed tracking-tight text-neutral-800"
           variants={fadeInUp}
           initial="hidden"
           whileInView="visible"
