@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import CookieConsent from "@/components/analytics/CookieConsent";
 import { SITE_URL, SITE_NAME, SITE_TITLE_DEFAULT, SITE_DESCRIPTION } from "@/lib/site";
 import "./globals.css";
 
@@ -25,6 +26,9 @@ export const metadata: Metadata = {
   manifest: "/manifest.webmanifest",
   alternates: {
     canonical: "/",
+  },
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION,
   },
   robots: {
     index: true,
@@ -75,6 +79,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1 pt-[var(--header-height)] md:pt-0">{children}</main>
         <Footer />
+        <CookieConsent gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
       </body>
     </html>
   );
