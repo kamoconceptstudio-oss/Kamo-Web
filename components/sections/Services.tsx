@@ -13,15 +13,15 @@ const services = [
   },
   {
     number: "02",
-    title: "Reformas integrales",
+    title: "Diseño + Supervisión",
     description:
-      "Coordinación completa del proyecto, de la idea inicial a la última pieza de mobiliario.",
+      "Diseño de interiores con supervisión de ejecución. Hasta 4 visitas presenciales para asegurar que la obra respete el proyecto.",
   },
   {
     number: "03",
-    title: "Dirección de obra",
+    title: "Consultoría de Espacios",
     description:
-      "Seguimiento riguroso para que cada decisión de diseño se ejecute con precisión.",
+      "Asesoría profesional para optimizar tus espacios. Ideal para proyectos en fases iniciales o consultas puntuales.",
   },
   {
     number: "04",
